@@ -1,0 +1,15 @@
+Курс: «Створення веб-застосунків з використанням Angular та React»
+Тема: Node.js
+
+Завдання 1.
+
+Використовуючи npm, встановіть пакет express. Створіть скрипт і в ньому отримайте модуль express. Далі створіть екземпляр сервера:
+const express = require('express');
+const app = express();
+Зробіть доступ до папки public:
+app.use(express.static(__dirname + '/public'));
+Запустіть сервер:
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+Додайте в папку кілька зображень і файл *.html з будь-якою розміткою. Продемонструйте доступ до вмісту папки public з адресного рядка браузера.
